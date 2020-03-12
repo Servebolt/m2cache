@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+ * Copyright (c) 2019 Servebolt
+ *
+ * Servebolt  reserves all rights in the Program as delivered. The Program
+ * or any portion thereof may not be reproduced in any form whatsoever without
+ * the written consent of Servebolt , except as provided by licence. A licence
+ * under Servebolt 's rights in the Program may be available directly from
+ * Servebolt .
+ *
+ * Disclaimer:
+ * THIS NOTICE MAY NOT BE REMOVED FROM THE PROGRAM BY ANY USER THEREOF.
+ * THE PROGRAM IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ * THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE PROGRAM OR THE USE OR OTHER DEALINGS
+ * IN THE PROGRAM.
+ *
+ * @category    Servebolt
+ * @package     Servebolt_M2Cache
+ * @copyright   Copyright (c) 2019 Servebolt
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="\Magento\Framework\Message\Collection">
+        <plugin name="serveboltM2CachePluginFrameworkMessageCollection" type="\Servebolt\M2Cache\Plugin\Framework\Message\Collection" />
+    </type>
+
+    <type name="Magento\Framework\Controller\ResultInterface">
+        <plugin name="comtroller-result-servebolt-cache" type="\Servebolt\M2Cache\Plugin\Framework\Controller\ResultPlugin" disabled="true"/>
+    </type>
+
+    <type name="Magento\Framework\App\Response\Http">
+        <plugin name="http-response-servebolt-cache" type="\Servebolt\M2Cache\Plugin\Framework\App\ResponsePlugin" sortOrder="1000" />
+    </type>
+
+    <type name="Magento\Framework\App\PageCache\Kernel">
+        <plugin name="page-cache-kernel-servebolt-cache" type="\Servebolt\M2Cache\Plugin\Framework\App\PageCache\KernelPlugin"  />
+    </type>
+
+    <type name="Magento\PageCache\Model\Cache\Type">
+        <plugin name="page-cache-type-servebolt-cache" type="\Servebolt\M2Cache\Plugin\PageCache\Model\Cache\TypePlugin"  />
+    </type>
+</config>
