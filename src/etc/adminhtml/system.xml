@@ -9,7 +9,7 @@
     <system>
         <section id="system">
             <group id="full_page_cache">
-                <group id="servebolt_fpc" translate="label" showInDefault="1" showInWebsite="0" showInStore="0" sortOrder="610">
+                <group id="servebolt_m2c" translate="label" showInDefault="1" showInWebsite="0" showInStore="0" sortOrder="610">
                     <label>Servebolt FPC Configuration</label>
                     <depends>
                         <field id="caching_application">1</field>

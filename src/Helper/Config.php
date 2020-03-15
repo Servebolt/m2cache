@@ -37,7 +37,7 @@ use \Magento\Framework\App\Config\Storage\WriterInterface;
 class Config
 {
     /** Paths to external cache config options */
-    const XPATH_MODULE         = 'system/full_page_cache/servebolt_fpc';
+    const XPATH_MODULE         = 'system/full_page_cache/servebolt_m2c';
     const XPATH_MODULE_ENABLED = 'enabled';
 
     /** Identifier for full page cache */

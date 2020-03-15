@@ -28,7 +28,7 @@
     <default>
         <system>
             <full_page_cache>
-                <servebolt_fpc>
+                <servebolt_m2c>
                     <enabled>0</enabled>
 
                     <cookies>
@@ -63,7 +63,7 @@
                         <enabled>0</enabled>
                         <cookies><![CDATA[XDEBUG_SESSION=PHPSTORM;]]></cookies>
                     </debugging>
-                </servebolt_fpc>
+                </servebolt_m2c>
             </full_page_cache>
         </system>
     </default>
