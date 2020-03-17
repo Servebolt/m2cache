@@ -1,6 +1,8 @@
+![Servebolt M2Cache banner with sprinting Cheetah](https://static.servebolt.com/m2cache/servebolt-m2cache.png?r=c)
+
 # Servebolt/M2Cache
 
-The Servebolt Magento 2 cache plugin makes cache headers for the HTML that allows HTML caching on the web server and in the browser. 
+The Servebolt Magento 2 cache plugin makes sites on [the fastest Magento 2 hosting](https://servebolt.com/platforms/magento-2-hosting/), even faster. It does this by making cache headers for the HTML that allows HTML caching on the web server and in the browser. 
 
 The frontend caches layer on top of the built-in caching in Magento, and eliminates the need for Varnish. It seamlessly integrates with the Servebolt hosting stack that uses nginx as the internet facing web server.
 
