@@ -1,4 +1,4 @@
-![Servebolt M2Cache banner with sprinting Cheetah](https://static.servebolt.com/m2cache/servebolt-m2cache.png?r=c)
+![Servebolt M2Cache banner with sprinting Cheetah](https://static.servebolt.com/m2cache/servebolt-m2cache.png)
 
 # Servebolt/M2Cache
 
