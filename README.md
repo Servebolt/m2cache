@@ -2,16 +2,17 @@
 
 # Servebolt/M2Cache
 
-The Servebolt Magento 2 cache plugin makes sites on [the fastest Magento 2 hosting](https://servebolt.com/platforms/magento-2-hosting/), even faster. It does this by making cache headers for the HTML that allows HTML caching on the web server and in the browser. 
+The Servebolt Magento 2 cache plugin makes sites on [the fastest Magento 2 hosting](https://servebo.lt/-7mhw), even faster. It does this by making cache headers for the HTML that allows HTML caching on the web server and in the browser.
 
 The frontend caches layer on top of the built-in caching in Magento, and eliminates the need for Varnish. It seamlessly integrates with the Servebolt hosting stack that uses nginx as the internet facing web server.
 
 For the admin section and dynamic parts of the store, the frontend cache bypasses requests with the no_cache cookies the cache. 
 
-
 ## Installation
 
 ### 1. Configure composer 
+
+Go to your Magento root folder (~/public/ on Servebolt)
 
 ```bash
 $ composer config repositories.servebolt-m2cache git https://github.com/Servebolt/m2cache.git
@@ -37,21 +38,21 @@ $ magento cache:flush
 
 ### 2.2 Activate the plugin using n98-magerun2
 
-Enable the module and activate it in Magento using [n98-magerun2](https://github.com/netz98/n98-magerun2). 
+Enable the module and activate it in Magento using [n98-magerun2](https://servebo.lt/evey1).
 
 ```bash
-$ n98 module:enable Servebolt_M2Cache
+$ magerun2 module:enable Servebolt_M2Cache
 
-$ n98 setup:upgrade
+$ magerun2 setup:upgrade
 
-$ n98 config:store:set system/full_page_cache/servebolt_m2c/enabled 1
+$ magerun2 config:store:set system/full_page_cache/servebolt_m2c/enabled 1
 
-$ n98 cache:flush
+$ magerun2 cache:flush
 ```
 
 ### 2.3 Enable HTML caching in the Servebolt admin panel
 
-In the [Servebolt Control Panel](https://admin.servebolt.com) the **Caching** setting for your site has to be set to "Static files + Full-Page Cache".
+In the [Servebolt Control Panel](https://servebo.lt/2o0lr) the **Caching** setting for your site has to be set to "Static files + Full-Page Cache".
 
 ![Image of cache setting in Admin Panel](https://static.servebolt.com/m2cache/magento2-servebolt-admin-panel-cache.png)
 
@@ -75,7 +76,7 @@ When the plugin is working correctly, the headers of a cached HTML document will
 The default expires 600, up to 3600 to set to 1 hour.
 
 ```bash
-$ n98 config:store:set system/full_page_cache/servebolt_m2c/headers/expires/lifetime 3600
+$ magerun2 config:store:set system/full_page_cache/servebolt_m2c/headers/expires/lifetime 3600
 ```
 
 ### Uninstallation
